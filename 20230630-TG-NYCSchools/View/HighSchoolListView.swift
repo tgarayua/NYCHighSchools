@@ -12,16 +12,24 @@ struct HighSchoolListView: View {
     
     var body: some View {
         NavigationView {
-            List(viewModel.highSchools, id: \.dbn) { highSchool in
-                NavigationLink(destination: SchoolDetailView(dbn: highSchool.dbn ?? "nil")) {
-                    Text(highSchool.school_name ?? "nil")
+            VStack {
+                if viewModel.highSchools.isEmpty {
+                    ProgressView()
+                } else {
+                    List(viewModel.highSchools, id: \.dbn) { highSchool in
+                        NavigationLink(destination: SchoolDetailView(dbn: highSchool.dbn ?? "nil")) {
+                            Text(highSchool.school_name ?? "nil")
+                        }
+                    }
                 }
             }
             .navigationTitle("NYC High Schools")
             .onAppear {
                 viewModel.fetchHighSchools()
             }
+            .ignoresSafeArea(edges: .bottom)
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

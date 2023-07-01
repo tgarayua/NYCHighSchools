@@ -14,5 +14,4 @@ struct SATScore: Codable {
     let sat_math_avg_score: String?
     let sat_critical_reading_avg_score: String?
     let sat_writing_avg_score: String?
-    // Add other properties as needed
 }

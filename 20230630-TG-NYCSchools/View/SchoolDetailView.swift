@@ -32,6 +32,7 @@ struct SchoolDetailView: View {
         .onAppear {
             viewModel.fetchSATScores()
         }
+        .ignoresSafeArea() // Ignore safe area insets for the entire view
     }
 }
 struct SchoolDetailView_Previews: PreviewProvider {

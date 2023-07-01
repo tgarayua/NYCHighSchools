@@ -10,5 +10,4 @@ import Foundation
 struct HighSchool: Codable {
     let dbn: String?
     let school_name: String?
-    // Add other properties as needed
 }

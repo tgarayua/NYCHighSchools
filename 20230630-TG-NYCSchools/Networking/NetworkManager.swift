@@ -54,7 +54,6 @@ class NetworkManager {
             if let data = data {
                 do {
                     let satScores = try JSONDecoder().decode([SATScore].self, from: data)
-//                    print("NetworkManager print: \(satScores)")
                     completion(satScores)
                 } catch {
                     print("Error decoding SAT scores data:", error.localizedDescription)
