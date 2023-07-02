@@ -109,7 +109,7 @@
 				1399F5372A4FBAFB0005BF59 /* Model */,
 				1399F5382A4FBB080005BF59 /* View */,
 				1399F5392A4FBB140005BF59 /* ViewModel */,
-				1399F53B2A4FC29F0005BF59 /* Networking */,
+				1399F53B2A4FC29F0005BF59 /* Network */,
 				1399F53A2A4FBB270005BF59 /* Support */,
 				1399F5132A4FBAE60005BF59 /* Preview Content */,
 			);
@@ -177,12 +177,12 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
-		1399F53B2A4FC29F0005BF59 /* Networking */ = {
+		1399F53B2A4FC29F0005BF59 /* Network */ = {
 			isa = PBXGroup;
 			children = (
 				1399F53F2A4FC3590005BF59 /* NetworkManager.swift */,
 			);
-			path = Networking;
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

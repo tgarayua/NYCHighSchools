@@ -11,6 +11,7 @@ class NetworkManager {
     static let shared = NetworkManager()
     private init() {}
     
+    // Fetches high schools data from the specified URL and performs completion with an optional array of HighSchool objects.
     func fetchHighSchools(completion: @escaping ([HighSchool]?) -> Void) {
         guard let url = URL(string: "https://data.cityofnewyork.us/resource/s3k6-pzi2.json") else {
             completion(nil)
@@ -38,6 +39,7 @@ class NetworkManager {
         }.resume()
     }
     
+    // Fetches SAT scores data from the specified URL and performs completion with an optional array of SATScore objects.
     func fetchSATScores(completion: @escaping ([SATScore]?) -> Void) {
         guard let url = URL(string: "https://data.cityofnewyork.us/resource/f9bf-2cp4.json") else {
             completion(nil)

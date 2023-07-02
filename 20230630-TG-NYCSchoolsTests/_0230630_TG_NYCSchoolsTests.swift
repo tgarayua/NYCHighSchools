@@ -6,31 +6,36 @@
 //
 
 import XCTest
+import SwiftUI
 @testable import _0230630_TG_NYCSchools
 
 final class _0230630_TG_NYCSchoolsTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testHighSchoolsViewModelFetchHighSchools() {
+        let viewModel = HighSchoolsViewModel()
+        let expectation = XCTestExpectation(description: "Fetch high schools")
+        
+        viewModel.fetchHighSchools() // Call the fetchHighSchools() method of the HighSchoolsViewModel
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { // Wait for 1 second to allow the fetching to complete
+            XCTAssertFalse(viewModel.highSchools.isEmpty, "High schools should not be empty after fetching") // Assert that the highSchools array should not be empty after fetching
+            expectation.fulfill() // Fulfill the expectation to indicate that the test has completed
         }
+        
+        wait(for: [expectation], timeout: 2) // Wait for the expectation to be fulfilled within 2 seconds
     }
-
+    
+    func testSATScoresViewModelFetchSATScores() {
+        let viewModel = SATScoresViewModel()
+        let expectation = XCTestExpectation(description: "Fetch SAT scores")
+        
+        viewModel.fetchSATScores() // Call the fetchSATScores() method of the SATScoresViewModel
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { // Wait for 1 second to allow the fetching to complete
+            XCTAssertFalse(viewModel.satScores.isEmpty, "SAT scores should not be empty after fetching") // Assert that the satScores array should not be empty after fetching
+            expectation.fulfill() // Fulfill the expectation to indicate that the test has completed
+        }
+        
+        wait(for: [expectation], timeout: 2) // Wait for the expectation to be fulfilled within 2 seconds
+    }
 }

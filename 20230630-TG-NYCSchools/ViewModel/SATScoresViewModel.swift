@@ -10,6 +10,7 @@ import Foundation
 class SATScoresViewModel: ObservableObject {
     @Published var satScores: [SATScore] = []
     
+    // Fetches SAT scores using the shared instance of NetworkManager and updates the satScores property.
     func fetchSATScores() {
         NetworkManager.shared.fetchSATScores { [weak self] satScores in
             DispatchQueue.main.async {
