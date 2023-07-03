@@ -24,13 +24,13 @@ struct HighSchoolListView: View {
                     }
                 }
             }
-            .navigationTitle("NYC High Schools") // Set the navigation title of the view
+            .navigationTitle("NYC High Schools")
             .onAppear {
-                viewModel.fetchHighSchools() // Fetch the high schools data when the view appears
+                viewModel.fetchHighSchools()
             }
-            .ignoresSafeArea(edges: .bottom) // Ignore safe area insets for the bottom edge of the view
+            .ignoresSafeArea(edges: .bottom)
         }
-        .navigationViewStyle(StackNavigationViewStyle()) // Set the navigation view style to stack
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
