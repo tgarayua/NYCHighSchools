@@ -8,30 +8,29 @@
 import SwiftUI
 
 struct HighSchoolListView: View {
-    @StateObject private var viewModel = HighSchoolsViewModel()
-    @State var searchText = ""
-    
+    @StateObject private var viewModel = HighSchoolsViewModel() // Create an instance of HighSchoolsViewModel and store it in the state object
+
     var body: some View {
         NavigationView {
             VStack {
-                // Check if the highSchools array in the viewModel is empty
                 if viewModel.highSchools.isEmpty {
-                    ProgressView() // Display a progress view if the array is empty
+                    ProgressView() // Show a progress view if the highSchools array is empty
                 } else {
-                    List(viewModel.highSchools, id: \.dbn) { highSchool in
+                    SearchBar(text: $viewModel.searchQuery) // Add a search bar and bind it to the search query
+                    List(viewModel.filteredSchools, id: \.dbn) { highSchool in // Use the filtered array of schools
                         NavigationLink(destination: SchoolDetailView(dbn: highSchool.dbn ?? "nil")) {
-                            Text(highSchool.school_name ?? "nil") // Display the school name as a text and navigates user to the SchoolDetailView
+                            Text(highSchool.school_name ?? "nil") // Display the school name in a text view
                         }
                     }
                 }
             }
-            .navigationTitle("NYC High Schools") // Set the navigation title
+            .navigationTitle("NYC High Schools") // Set the navigation title of the view
             .onAppear {
-                viewModel.fetchHighSchools() // Fetch the high schools when the view appears
+                viewModel.fetchHighSchools() // Fetch the high schools data when the view appears
             }
-            .ignoresSafeArea(edges: .bottom) // Ignore safe area insets at the bottom
+            .ignoresSafeArea(edges: .bottom) // Ignore safe area insets for the bottom edge of the view
         }
-        .navigationViewStyle(StackNavigationViewStyle()) // Apply stack navigation style
+        .navigationViewStyle(StackNavigationViewStyle()) // Set the navigation view style to stack
     }
 }
 

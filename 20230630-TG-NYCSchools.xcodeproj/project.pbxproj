@@ -20,6 +20,7 @@
 		1399F5482A4FC4790005BF59 /* SATScoresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1399F5472A4FC4790005BF59 /* SATScoresViewModel.swift */; };
 		1399F54A2A4FC4C20005BF59 /* HighSchoolListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1399F5492A4FC4C20005BF59 /* HighSchoolListView.swift */; };
 		1399F54C2A4FC4F10005BF59 /* SchoolDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1399F54B2A4FC4F10005BF59 /* SchoolDetailView.swift */; };
+		1399F5522A52456C0005BF59 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1399F5512A52456C0005BF59 /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		1399F5472A4FC4790005BF59 /* SATScoresViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATScoresViewModel.swift; sourceTree = "<group>"; };
 		1399F5492A4FC4C20005BF59 /* HighSchoolListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighSchoolListView.swift; sourceTree = "<group>"; };
 		1399F54B2A4FC4F10005BF59 /* SchoolDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailView.swift; sourceTree = "<group>"; };
+		1399F5512A52456C0005BF59 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,18 +112,19 @@
 				1399F5382A4FBB080005BF59 /* View */,
 				1399F5392A4FBB140005BF59 /* ViewModel */,
 				1399F53B2A4FC29F0005BF59 /* Network */,
+				1399F5132A4FBAE60005BF59 /* Components */,
 				1399F53A2A4FBB270005BF59 /* Support */,
-				1399F5132A4FBAE60005BF59 /* Preview Content */,
+				1399F5532A5246010005BF59 /* Preview Content */,
 			);
 			path = "20230630-TG-NYCSchools";
 			sourceTree = "<group>";
 		};
-		1399F5132A4FBAE60005BF59 /* Preview Content */ = {
+		1399F5132A4FBAE60005BF59 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				1399F5142A4FBAE60005BF59 /* Preview Assets.xcassets */,
+				1399F5512A52456C0005BF59 /* SearchBar.swift */,
 			);
-			path = "Preview Content";
+			path = Components;
 			sourceTree = "<group>";
 		};
 		1399F51D2A4FBAE60005BF59 /* 20230630-TG-NYCSchoolsTests */ = {
@@ -183,6 +186,14 @@
 				1399F53F2A4FC3590005BF59 /* NetworkManager.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		1399F5532A5246010005BF59 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1399F5142A4FBAE60005BF59 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,6 +332,7 @@
 				1399F5462A4FC43D0005BF59 /* HighSchoolsViewModel.swift in Sources */,
 				1399F5442A4FC3CA0005BF59 /* SATScore.swift in Sources */,
 				1399F5482A4FC4790005BF59 /* SATScoresViewModel.swift in Sources */,
+				1399F5522A52456C0005BF59 /* SearchBar.swift in Sources */,
 				1399F50E2A4FBAE50005BF59 /* _0230630_TG_NYCSchoolsApp.swift in Sources */,
 				1399F5422A4FC39F0005BF59 /* HighSchool.swift in Sources */,
 			);
