@@ -37,7 +37,7 @@ struct SchoolDetailView: View {
                         .font(.title)
                         .opacity(isShowing ? 1.0 : 0.0)
                     
-                    Text("Math:")
+                    Text("Avg Math:")
                         .font(.headline)
                         .opacity(isShowing ? 1.0 : 0.0)
                     
@@ -45,16 +45,15 @@ struct SchoolDetailView: View {
                         .font(.title)
                         .opacity(isShowing ? 1.0 : 0.0)
                     
-                    
-                    Text("Reading:")
+                    Text("Avg Reading:")
                         .font(.headline)
                         .opacity(isShowing ? 1.0 : 0.0)
                     
                     Text("\(satScore.sat_critical_reading_avg_score)")
                         .font(.title)
                         .opacity(isShowing ? 1.0 : 0.0)
-                    
-                    Text("Writing:")
+                
+                    Text("Avg Writing:")
                         .font(.headline)
                         .opacity(isShowing ? 1.0 : 0.0)
                     
@@ -75,7 +74,7 @@ struct SchoolDetailView: View {
         }
         .padding()
         .onAppear {
-            withAnimation(.easeIn(duration: 1)) {
+            withAnimation(.easeOut(duration: 1)) {
                 isShowing = true
             }
             viewModel.fetchSATScores()
