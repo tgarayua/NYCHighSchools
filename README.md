@@ -2,7 +2,7 @@
 
 ![GIF Preview](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHNnMHg5aHNkb2FoZ3I5cDMwanVmcWE1eml1dXBnODkxeDh6Z3lncCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qljxRaKlgnOEbIcR2e/giphy.gif)
 
-# About
+## About
 
 The NYC Schools app is a SwiftUI-based application that allows users to browse a list of schools in New York City and view detailed information about each school, including their average test scores for Reading, Writing, and Math. The app follows the Model-View-ViewModel (MVVM) architectural pattern for clean code separation and modularity.
 
