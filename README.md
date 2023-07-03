@@ -9,6 +9,7 @@ The NYC Schools app is a SwiftUI-based application that allows users to browse a
 ## Features
 
 - Browse a scrollable list of NYC schools.
+- Search for a specific school using the search bar.
 - View detailed information about each school, including the school's name and average test scores for Reading, Writing, and Math.
 - Smooth navigation between the list view and the school detail view.
 - Responsive user interface with dynamic layout and adaptive design.
