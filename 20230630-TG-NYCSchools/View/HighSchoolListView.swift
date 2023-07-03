@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HighSchoolListView: View {
     @StateObject private var viewModel = HighSchoolsViewModel() // Create an instance of HighSchoolsViewModel and store it in the state object
-
+    
     var body: some View {
         NavigationView {
             VStack {
