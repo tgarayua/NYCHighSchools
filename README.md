@@ -42,4 +42,4 @@ The NYC Schools app follows a standard project structure:
 - **ViewModels**: Contains the view models that provide data and business logic to the views. Includes the `SchoolsViewModel` and `SchoolDetailViewModel`.
 - **Network**: Contains the networking and data services used to fetch the school data. Includes the `NetworkingManager` for API communication.
 - **Components**: Contains a reusable `SearchBar` component. The purpose of this is for the reusability of the search bar anywhere in the app.
-- **Supporting Files**: Contains the app's entry point (`App.swift`), assets, and any other supporting files.
+- **Supporting Files**: Contains the app's entry point (`_0230630_TG_NYCSchoolsApp.swift`), assets, and any other supporting files.
