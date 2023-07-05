@@ -28,7 +28,7 @@ To run the NYC Schools app locally on your development machine, follow these ste
 Once the NYC Schools app is running, you can perform the following actions:
 
 1. On the home screen, you will see a scrollable list of NYC schools.
-2. Scroll through the list to browse different schools.
+2. Scroll through the list to browse different schools or use the search bar to find a specific school.
 3. Tap on a school to view its detail page.
 4. On the school detail page, you will see the school's name and the average test scores for Reading, Writing, and Math.
 5. Swipe back to the home screen to select a different school.
