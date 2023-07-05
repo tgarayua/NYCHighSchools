@@ -19,7 +19,7 @@ The NYC Schools app is a SwiftUI-based application that allows users to browse a
 
 To run the NYC Schools app locally on your development machine, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/tgarayua/NYCHighSchools.git`
+1. Clone the repository: `git clone https://github.com/USERNAME/NYCHighSchools.git`
 2. Open the project in Xcode.
 3. Build and run the app on the iOS Simulator or a connected iOS device.
 
