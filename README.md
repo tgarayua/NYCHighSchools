@@ -40,5 +40,6 @@ The NYC Schools app follows a standard project structure:
 - **Models**: Contains the data model and entities used in the app, such as the `School` model representing a NYC school.
 - **Views**: Contains the SwiftUI views used to render the user interface, including the list view and the school detail view.
 - **ViewModels**: Contains the view models that provide data and business logic to the views. Includes the `SchoolsViewModel` and `SchoolDetailViewModel`.
-- **Services**: Contains the networking and data services used to fetch the school data. Includes the `NYCSchoolsService` for API communication.
+- **Network**: Contains the networking and data services used to fetch the school data. Includes the `NetworkingManager` for API communication.
+- **Components**: Contains a reusable `SearchBar` component. The purpose of this is for the reusability of the search bar anywhere in the app.
 - **Supporting Files**: Contains the app's entry point (`App.swift`), assets, and any other supporting files.
