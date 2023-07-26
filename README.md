@@ -1,6 +1,6 @@
 # NYCHighSchools
 
-![GIF Preview](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHNnMHg5aHNkb2FoZ3I5cDMwanVmcWE1eml1dXBnODkxeDh6Z3lncCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qljxRaKlgnOEbIcR2e/giphy.gif)
+![GIF Preview](https://im.ezgif.com/tmp/ezgif-1-103f78be49.gif)
 
 ## About
 
